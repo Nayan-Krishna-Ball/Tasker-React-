@@ -1,16 +1,71 @@
-# React + Vite
+Tasker – React Task Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tasker is a simple and intuitive task-management application built with React. It allows users to create, search, manage, and display tasks efficiently through a clean, component-based architecture.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add new tasks using a modal form
 
-## React Compiler
+Search tasks dynamically
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Perform task actions (mark complete, delete, etc.)
 
-## Expanding the ESLint configuration
+View a structured task list
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive UI with header, hero section, and footer
+
+“No Task Found” message for empty results
+
+Modular & maintainable component structure
+
+Project Structure
+Main App Structure
+
+<App /> renders the main layout of the application:
+
+<Header /> – Top navigation/header section
+
+<Hero /> – Intro or banner section
+
+<TaskBoard /> – Core task-management interface
+
+<Footer /> – Page footer
+
+TaskBoard Components
+
+The <TaskBoard /> is composed of:
+
+<AddTaskModal /> – Popup/modal to add a new task
+
+<SearchTask /> – Component for searching/filtering tasks
+
+<TaskAction /> – Buttons or controls for managing tasks
+
+<TaskList /> – Displays all tasks
+
+<NoTaskFound /> – Shown when no tasks match search criteria
+
+🏗️ Tech Stack
+
+React.js
+
+JavaScript (ES6+)
+
+CSS / Tailwind / Styled Components
+
+Vite /
+
+src/
+├── components/
+│ ├── Header/
+│ ├── Hero/
+│ ├── Footer/
+│ └── TaskBoard/
+│ ├── AddTaskModal/
+│ ├── SearchTask/
+│ ├── TaskAction/
+│ ├── TaskList/
+│ └── NoTaskFound/
+├── App.jsc
+├── main.js
+└── styles/
